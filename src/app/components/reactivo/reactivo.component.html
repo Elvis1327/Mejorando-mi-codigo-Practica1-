@@ -1,0 +1,31 @@
+<div class="principal">
+  <div class="Holaa">
+    <form  [formGroup]="formulario2" (ngSubmit)="guardar()">
+
+      <label for="nombre">Nombre</label>
+      <input
+      type="text"
+      placeholder="Nombre"
+      formControlName="nombre">
+
+      <span *ngIf="nombreNoValid"
+      [style.color]="'red'">
+        Este campo es Obligatorio
+      </span>
+
+      <label for="apellido">Apellido</label>
+      <input
+      type="text"
+      placeholder="Apellido"
+      formControlName="apellido">
+
+      <label for="email">Email</label>
+      <input
+      type="text"
+      placeholder="Email"
+      formControlName="email">
+
+      <input type="submit" value="Enviar" name="email">
+    </form>
+  </div>
+</div>

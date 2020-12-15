@@ -1,0 +1,16 @@
+<header class="header">
+  <div class="logo">
+    <h1>Bienvenido</h1>
+  </div>
+  <nav class="navegacion">
+    <ul>
+      <li><a [routerLink]="['/tenis']" [routerLinkActive]="['/actived']">Tenis</a></li>
+      <li><a [routerLink]="['/crud']" [routerLinkActive]="['/actived']">Crud</a></li>
+      <li><a [routerLink]="['/reactivo']" [routerLinkActive]="['/actived']">Reactivo</a></li>
+      <li><a [routerLink]="['/champions']" [routerLinkActive]="['/actived']">Champions</a></li>
+      <li><a [routerLink]="['/pokemon']" [routerLinkActive]="['/actived']">Pokemons</a></li>
+
+    </ul>
+  </nav>
+</header>
+<router-outlet></router-outlet>

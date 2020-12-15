@@ -1,0 +1,50 @@
+<div class="todo">
+<div class="principal">
+  <form class="formulario1" #crudForm="ngForm" (ngSubmit)="onSubmit(crudForm)">
+    <div class="formulario2">
+      <label for="name">Name</label>
+      <input type="text" name="name" required minlength="5" #name="ngModel" [(ngModel)]="usuario.name">
+    </div>
+
+    <div class="formulario2">
+      <label for="lastname" >Last Name</label>
+      <input type="text" name="lastname" required minlength="5" #lastname="ngModel" [(ngModel)]="usuario.lastname">
+    </div>
+
+    <div class="formulario2">
+      <label for="age">Age</label>
+      <input type="text" name="age" required  #age="ngModel" [(ngModel)]="usuario.age">
+    </div>
+
+    <div class="formulario2">
+      <label for="email">Email</label>
+      <input type="email" name="email" required minlength="5" #email="ngModel" [(ngModel)]="usuario.email">
+    </div>
+
+    <div class="formulario2">
+      <label for="food">Favorite Food</label>
+      <input type="text" name="food" required  #food="ngModel" [(ngModel)]="usuario.favoritefood">
+    </div>
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+
+
+
+<table class="table">
+  <thead>
+    <tr >
+      <th>Name</th>
+      <th>Last Name</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Favorite Food</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>

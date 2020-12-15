@@ -1,0 +1,15 @@
+.contenido{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#boton{
+  display: block;
+  margin-left: 270px;
+  margin-top: 5px;
+  width: 30%;
+}
