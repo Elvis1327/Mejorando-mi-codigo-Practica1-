@@ -11,9 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TenisComponent } from './components/tenis/tenis.component';
 import { AlternoComponent } from './components/alterno/alterno.component';
-import { CrudComponent } from './components/crud/crud.component';
 import { ReactivoComponent } from './components/reactivo/reactivo.component';
-import { ChampionsComponent } from './components/champions/champions.component';
 import { PokemonComponent } from './components/pokemon/pokemon.component';
 
 @NgModule({
@@ -21,9 +19,7 @@ import { PokemonComponent } from './components/pokemon/pokemon.component';
     AppComponent,
     TenisComponent,
     AlternoComponent,
-    CrudComponent,
     ReactivoComponent,
-    ChampionsComponent,
     PokemonComponent
   ],
   imports: [
