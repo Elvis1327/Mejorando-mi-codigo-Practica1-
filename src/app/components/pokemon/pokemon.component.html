@@ -1,7 +1,8 @@
-<div class="cards">
+<div class="cards" >
   <div class="card" *ngFor="let po of pokemones">
     <div class="imagen">
       <img src="{{po.sprites.front_default}}" alt="">
     </div>
+    <h1>{{po.name}}</h1>
   </div>
 </div>

@@ -1,3 +1,8 @@
+#mio{
+  padding-left: 15px;
+  font-family: 'Yanone kaffeesatz';
+  font-weight: bold;
+}
 .cards{
   margin-top: 50px;
   width: 100%;

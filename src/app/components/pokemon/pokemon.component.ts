@@ -8,25 +8,24 @@ import { PokemonService } from 'src/app/services/pokemon.service';
   styleUrls: ['./pokemon.component.css']
 })
 export class PokemonComponent implements OnInit {
-  pokemones: Array<any>;
-  constructor(private service: PokemonService) { }
+  pokemones: any;
+  constructor(private service: PokemonService) {
+    this.getPokemons()
+    console.log(this.pokemones)
+  }
 
   ngOnInit(){
-    this.getPokemons()
+
   }
 
   getPokemons(){
-    let numeros = [1,2,3,4,5,6,7,8,9,10];
-    let transformados = numeros.map((items)=>{
-      console.log(items)
-      this.service.pokemons(items).subscribe((res: any)=>{
-        this.pokemones = res;
-        console.log(res)
-      },(err)=>{
-        console.log(err)
-      })
-    })
-
-  }
-
+    this.service.gerMorePokemons().subscribe((res: any)=>{
+      console.log(res);
+      res.map((recorrer: any)=>{
+        this.service.pokemons(recorrer.name).subscribe((response: any)=>{
+          return this.pokemones = response;
+        });
+      });
+    });
+  };
 }
