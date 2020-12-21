@@ -5,8 +5,11 @@
   text-align: center;
   width: 500px;
 }
-form label{
-  display: block;
+
+.Holaa form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
 }
 
 .Holaa form{
@@ -24,5 +27,6 @@ form label{
 .Holaa form #botonS{
   display: block;
   text-align: center;
-
+  margin-left: 210px;
+  margin-top: 10px;
 }
