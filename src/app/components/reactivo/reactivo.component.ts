@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import  { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-reactivo',
   templateUrl: './reactivo.component.html',
@@ -28,11 +27,11 @@ export class ReactivoComponent{
 
   misFormularios(){
     this.formulario2 = this.fb.group({
-      nombre: ['', [Validators.required]],
-      apellido: ['', [Validators.required]],
-      email: ['', [Validators.required]],
-    })
-  }
+      nombre: ['', [Validators.required, Validators.minLength(5)]],
+      apellido: ['', [Validators.required, Validators.minLength(5)]],
+      email: ['', [Validators.required], [Validators.minLength(5)]],
+    });
+  };
 
   guardar(){
     if(this.formulario2.invalid){
