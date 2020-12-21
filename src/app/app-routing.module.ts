@@ -13,7 +13,8 @@ const routes: Routes = [
   {path: 'tenis', component: TenisComponent},
   {path: 'alterno/:id', component: AlternoComponent},
   {path: 'reactivo', component: ReactivoComponent},
-  {path: 'pokemon', component: PokemonComponent}
+  {path: 'pokemon', component: PokemonComponent},
+  {path: '**', pathMatch: 'full', redirectTo: 'reactivo'}
 ];
 
 @NgModule({

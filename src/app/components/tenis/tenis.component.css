@@ -1,3 +1,8 @@
+.principal{
+  padding: 20px;
+  padding-top: 0px;
+}
+
 #mio{
   padding-left: 15px;
   font-family: 'Yanone kaffeesatz';
@@ -8,7 +13,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  gap: 15px;
+  gap: 10px;
   text-align: center;
   margin: 0px auto;
 }

@@ -10,7 +10,7 @@
 
       <span *ngIf="nombreNoValid"
       [style.color]="'red'">
-        Este campo es Obligatorio
+        Este campo debe tener mas de 5 caracteres
       </span>
 
       <label for="apellido">Apellido</label>
@@ -18,12 +18,20 @@
       type="text"
       placeholder="Apellido"
       formControlName="apellido">
+      <span *ngIf="apellidoNoValid"
+      [style.color]="'red'">
+        Este campo debe tener mas de 5 caracteres
+      </span>
 
       <label for="email">Email</label>
       <input
       type="text"
       placeholder="Email"
       formControlName="email">
+      <span *ngIf="emailNoValid"
+      [style.color]="'red'">
+        Este campo requiere mas de 5 caracteres
+      </span>
 
       <input type="submit" value="Enviar" name="email">
     </form>

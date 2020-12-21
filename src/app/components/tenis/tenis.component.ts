@@ -20,7 +20,7 @@ export class TenisComponent {
     this.tenis = this.tenisService.getTenis();
   };
 
-  verMas(id : string){
+  verMas(id: string){
     this.router.navigate(['/alterno',id]);
   }
 };

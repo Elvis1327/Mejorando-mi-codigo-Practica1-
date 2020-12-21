@@ -1,16 +1,18 @@
 <h1 id="mio">Hoy tenemos las mejores ofertas de ropa <strong>Precio competitivos!</strong></h1>
 <hr>
 
-<div class="cards">
-  <div class="card" *ngFor="let lista of tenis; let i = index">
-    <div class="card-img">
-      <img src="{{lista.img}}" alt="icon">
-    </div>
-    <div class="card-text">
-      <h1>{{lista.marca}}</h1>
-      <span>Lorem ipsum dolor sit amet consectetur <strong>{{lista.precio}}</strong></span>
-      <p>{{lista.color}}</p>
-      <button class="btn btn-success mb-2" (click)="verMas(i)">Ver mas</button>
+<div class="principal">
+  <div class="cards">
+    <div class="card" *ngFor="let lista of tenis; let i = index">
+      <div class="card-img">
+        <img src="{{lista.img}}" alt="icon">
+      </div>
+      <div class="card-text">
+        <h1>{{lista.marca}}</h1>
+        <span>Lorem ipsum dolor sit amet consectetur <strong>{{lista.precio}}</strong></span>
+        <p>{{lista.color}}</p>
+        <button class="btn btn-success mb-2" (click)="verMas(i)">Ver mas</button>
+      </div>
     </div>
   </div>
 </div>

@@ -16,8 +16,6 @@
   margin-top: 15px;
 }
 
-
-
 .navegacion{
   display: flex;
   justify-content: space-around;
@@ -37,7 +35,7 @@
   color: white;
   text-decoration: none;
   align-items: center;
-  line-height: 160px;
+  line-height: 200px;
   height: 60px;
 }
 .navegacion ul li a:last-child{

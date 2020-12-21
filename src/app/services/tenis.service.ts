@@ -66,16 +66,14 @@ export class TenisService {
   };
 
   getTenis(){
-    const ofertasDeHoy = this.tenis.filter((ofertas)=>{
-      return ofertas.precio <= 10000
-    })
-    console.log(ofertasDeHoy);
-    console.log(this.tenis)
+    const ofertasDeHoy = this.tenis.filter((items)=>{
+      return items.precio <= 6000
+    });
     return ofertasDeHoy;
   };
 
   getTeni(idx: any){
-    return this.tenis[idx]
+    return this.tenis[idx];
   }
 }
 

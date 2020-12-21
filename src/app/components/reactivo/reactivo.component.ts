@@ -8,7 +8,6 @@ import { NgForm } from '@angular/forms';
 })
 
 export class ReactivoComponent{
-  formulario: FormGroup;
   formulario2: FormGroup;
 
   constructor(private fb: FormBuilder){
@@ -40,9 +39,9 @@ export class ReactivoComponent{
       Object.values(this.formulario2.controls).map((items)=>{
         items.markAsTouched();
         console.log(items);
-      })
-    }
-  }
+      });
+    };
+  };
 
 
 }
