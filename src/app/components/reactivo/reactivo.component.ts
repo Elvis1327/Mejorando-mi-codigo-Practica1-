@@ -23,6 +23,9 @@ export class ReactivoComponent{
   get emailNoValid(){
     return this.formulario2.get('email').invalid && this.formulario2.get('email').touched
   };
+  get passwordNoValid(){
+    return this.formulario2.get('password').invalid && this.formulario2.get('password').touched
+  };
   //
 
   misFormularios(){
@@ -30,6 +33,7 @@ export class ReactivoComponent{
       nombre: ['', [Validators.required, Validators.minLength(5)]],
       apellido: ['', [Validators.required, Validators.minLength(5)]],
       email: ['', [Validators.required], [Validators.minLength(5)]],
+      password: ['', [Validators.required, Validators.minLength(5)]]
     });
   };
 

@@ -1,6 +1,28 @@
 .principal{
   margin-top: 20px;
+  margin: 0px auto;
+  align-items: center;
+  text-align: center;
+  width: 500px;
 }
 form label{
   display: block;
+}
+
+.Holaa form{
+  width: 100%;
+}
+
+.Holaa form span{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.Holaa form #botonS{
+  display: block;
+  text-align: center;
+
 }

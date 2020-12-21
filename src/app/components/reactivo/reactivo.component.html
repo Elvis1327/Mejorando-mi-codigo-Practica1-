@@ -1,7 +1,6 @@
 <div class="principal">
   <div class="Holaa">
     <form  [formGroup]="formulario2" (ngSubmit)="guardar()">
-
       <label for="nombre">Nombre</label>
       <input
       type="text"
@@ -35,7 +34,18 @@
         Este campo requiere mas de 5 caracteres
       </span>
 
-      <input type="submit" value="Enviar" name="email">
+      <label for="password">Password</label>
+      <input
+      type="text"
+      placeholder="Password Here"
+      formControlName="password">
+      <!--Spans-->
+      <span *ngIf="passwordNoValid"
+      [style.color]="'red'">
+        Este campo requiere mas de 5 caracteres
+      </span>
+
+      <input type="submit" value="Enviar" name="email" id="botonS" class="btn btn-success">
     </form>
   </div>
 </div>
