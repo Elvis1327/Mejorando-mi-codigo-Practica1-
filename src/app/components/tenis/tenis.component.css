@@ -1,3 +1,43 @@
+
+/* Inicio*/
+.contenido{
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  margin-top: 5px;
+  opacity: 1;
+  height: 100px;
+  align-items: center;
+}
+
+.contenido-2{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.contenido a{
+  font-size: 40px;
+  color: black;
+  font-weight: bold
+}
+
+.contenido .contenido-input{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.contenido .contenido-input input[type="text"]{
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+/*Final del inicio */
+
 .principal{
   padding: 20px;
   padding-top: 0px;

@@ -22,6 +22,10 @@ export class TenisComponent {
 
   verMas(id: string){
     this.router.navigate(['/alterno',id]);
-  }
+  };
+
+  cambiar(){
+
+  };
 };
 
