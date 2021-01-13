@@ -13,6 +13,7 @@ import { TenisComponent } from './components/tenis/tenis.component';
 import { AlternoComponent } from './components/alterno/alterno.component';
 import { ReactivoComponent } from './components/reactivo/reactivo.component';
 import { PokemonComponent } from './components/pokemon/pokemon.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PokemonComponent } from './components/pokemon/pokemon.component';
     TenisComponent,
     AlternoComponent,
     ReactivoComponent,
-    PokemonComponent
+    PokemonComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

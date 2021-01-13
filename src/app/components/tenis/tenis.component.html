@@ -1,18 +1,28 @@
-
-
-
+<!--Principio del buscador-->
 <div class="contenido">
   <div class="contenido-2">
-  <a href="#" [routerLink]="['/tenis']"> <i class="fab fa-airbnb">E-Commerce</i></a>
-
-  <div class="contenido-input">
-    <input type="text" (change)="cambiar()">
-
+    <a href="#" [routerLink]="['/tenis']"> <i class="fab fa-airbnb">E-Commerce</i></a>
+    <div class="contenido-input">
+      <input type="text" (click)="cambiar()">
+    </div>
   </div>
 </div>
+<hr>
+<!--Fin del buscador-->
+
+<!--Inicio del banner-->
+<div class="banner">
+  <div class="banner-text">
+    <h1>Disfruta de las mejores mejores ofertas <strong>Los mejores precios  super copetitivos</strong></h1>
+    <p>Escoje el tenis que lleva tu estilo al mejor precio y la mejor calidad</p>
+    <button class="btn btn-primary" (click)="navegar()">Explorar</button>
+  </div>
+  <div class="banner-img">
+    <img src="assets/img/sneakers2.png" alt="foto de tenis" width="500px">
+  </div>
 </div>
 
-
+<!--Cards-->
 <div class="principal">
   <div class="cards">
     <div class="card" *ngFor="let lista of tenis; let i = index">
@@ -28,3 +38,4 @@
     </div>
   </div>
 </div>
+<!--Fin de las cards-->

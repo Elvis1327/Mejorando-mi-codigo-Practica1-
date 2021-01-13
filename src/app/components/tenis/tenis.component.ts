@@ -27,5 +27,9 @@ export class TenisComponent {
   cambiar(){
 
   };
+
+  navegar(){
+    this.router.navigate(['/tenis'])
+  }
 };
 

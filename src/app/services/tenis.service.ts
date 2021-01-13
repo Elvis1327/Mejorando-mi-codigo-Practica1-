@@ -67,7 +67,7 @@ export class TenisService {
 
   getTenis(){
     const ofertasDeHoy = this.tenis.filter((items)=>{
-      return items.precio <= 6000
+      return items.precio <= 10000
     });
     return ofertasDeHoy;
   };
